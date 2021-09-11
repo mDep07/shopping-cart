@@ -13,9 +13,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Link href="/about">
+        {/* <Link href="/about">
           <a>About</a>
-        </Link>
+        </Link> */}
 
         <ListProducts />
       </main>
