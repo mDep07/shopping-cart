@@ -1,3 +1,8 @@
+import Head from 'next/head';
+import mainStyles from '../styles/Main.module.css';
+
+import Link from 'next/link';
+
 import { Product } from '../components/products/product';
 
 const products = [
@@ -10,10 +15,29 @@ const products = [
 
 function Products() {
   return (
-    <div>
-      {products.map((p) => (
-        <Product product={p} />
-      ))}
+    <div className={mainStyles.container}>
+      <Head>
+        <title>Create Next App</title>
+      </Head>
+
+      <main className={mainStyles.main}>
+        <Link href="/products">
+          <a>Products</a>
+        </Link>
+        {products.map((p) => (
+          <Product product={p} />
+        ))}
+      </main>
+
+      <footer className={mainStyles.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{' '}
+        </a>
+      </footer>
     </div>
   );
 }
