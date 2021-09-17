@@ -1,5 +1,5 @@
 import styles from '../../styles/Navbar.module.css';
-import mainStyles from '../../styles/Main.module.css';
+import mainStyles from '../styles/Main.module.css';
 
 import Link from 'next/link';
 

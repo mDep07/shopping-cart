@@ -3,6 +3,7 @@ import mainStyles from '../styles/Main.module.css';
 import styles from '../styles/Home.module.css';
 
 import Link from 'next/link';
+import { Navbar } from '../components/navbar';
 
 export default function Home() {
   return (
@@ -10,6 +11,14 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
+
+      <Navbar
+        buttons={[
+          { path: '/products', text: 'Products' },
+          { path: '/categories', text: 'Categories' },
+        ]}
+        title="Home"
+      />
 
       <Link href="/products">
         <a className={mainStyles.button}>Products</a>

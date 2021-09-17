@@ -21,7 +21,10 @@ function Products() {
         <title>Products</title>
       </Head>
 
-      <Navbar buttons={[{path: '/', text: '← Back to Home'}]} title="Products">
+      <Navbar
+        buttons={[{ path: '/', text: '← Back to Home' }]}
+        title="Products"
+      />
 
       {/* <Link href="/">
         <a className={mainStyles.button}>← Back to Home</a>
