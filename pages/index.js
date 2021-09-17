@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
-import { ListProducts } from '../components/products/list_products';
-
 import Link from 'next/link';
 
 export default function Home() {
@@ -13,11 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <Link href="/about">
-          <a>About</a>
-        </Link> */}
-
-        <ListProducts />
+        <Link href="/products">
+          <a>Products</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
