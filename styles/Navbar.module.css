@@ -1,6 +1,14 @@
 .container {
-  background-color: red;
+  width: 100%;
 }
+
+.title {
+  text-align: center;
+  font-size: 0.8rem;
+  color: aquamarine;
+  font-weight: 400;
+}
+
 .buttons {
   background-color: brown;
 }

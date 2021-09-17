@@ -6,13 +6,14 @@ import Link from 'next/link';
 const Navbar = ({ buttons, title }) => {
   return (
     <nav className={styles.container}>
-      {title && <h1>{title}</h1>}
+      {title && <p className={styles.title}>{title}</p>}
+
       <div className={styles.buttons}>
-        {buttons.map((btn) => {
+        {buttons.map((btn) => (
           <Link href={btn.path}>
             <a className={mainStyles.button}>{btn.text}</a>
-          </Link>;
-        })}
+          </Link>
+        ))}
       </div>
     </nav>
   );
