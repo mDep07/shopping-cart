@@ -22,7 +22,7 @@ function Products() {
 
       <main className={mainStyles.main}>
         <Link href="/">
-          <a>← Back to Home</a>
+          <a className={mainStyles.button}>← Back to Home</a>
         </Link>
 
         <ListProducts products={list_products} />

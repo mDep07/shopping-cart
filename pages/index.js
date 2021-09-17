@@ -11,9 +11,9 @@ export default function Home() {
         <title>Home</title>
       </Head>
 
-      <main className={`${mainStyles.main} ${mainStyles.button}`}>
+      <main className={mainStyles.main}>
         <Link href="/products">
-          <a>Products</a>
+          <a className={mainStyles.button}>Products</a>
         </Link>
       </main>
 
