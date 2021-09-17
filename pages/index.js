@@ -11,10 +11,12 @@ export default function Home() {
         <title>Home</title>
       </Head>
 
+      <Link href="/products">
+        <a className={mainStyles.button}>Products</a>
+      </Link>
+
       <main className={mainStyles.main}>
-        <Link href="/products">
-          <a className={mainStyles.button}>Products</a>
-        </Link>
+        <p>Home</p>
       </main>
 
       <footer className={mainStyles.footer}>

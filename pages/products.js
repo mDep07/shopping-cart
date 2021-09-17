@@ -20,11 +20,11 @@ function Products() {
         <title>Products</title>
       </Head>
 
-      <main className={mainStyles.main}>
-        <Link href="/">
-          <a className={mainStyles.button}>← Back to Home</a>
-        </Link>
+      <Link href="/">
+        <a className={mainStyles.button}>← Back to Home</a>
+      </Link>
 
+      <main className={mainStyles.main}>
         <ListProducts products={list_products} />
       </main>
 
