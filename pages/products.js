@@ -3,9 +3,9 @@ import mainStyles from '../styles/Main.module.css';
 
 import Link from 'next/link';
 
-import { Product } from '../components/products/product';
+import { ListProducts } from '../components/products/listProducts';
 
-const products = [
+const list_products = [
   { name: 'Coca Cola 1LT', price: 145.7, category: 'Driks' },
   { name: 'Fernet 750', price: 540.55, category: 'Driks' },
   { name: 'Vino Toro 1LT', price: 120, category: 'Driks' },
@@ -17,16 +17,15 @@ function Products() {
   return (
     <div className={mainStyles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Products</title>
       </Head>
 
       <main className={mainStyles.main}>
-        <Link href="/products">
-          <a>Products</a>
+        <Link href="/">
+          <a>← Back to Home</a>
         </Link>
-        {products.map((p) => (
-          <Product product={p} />
-        ))}
+
+        <ListProducts products={list_products} />
       </main>
 
       <footer className={mainStyles.footer}>

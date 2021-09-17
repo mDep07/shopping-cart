@@ -1,9 +1,7 @@
-const Product = ({ product }) => {
+const Product = ({ product, classes }) => {
   return (
-    <div>
-      <div>
-        {product.name} - <strong>${product.price.toFixed(2)}</strong>
-      </div>
+    <div className={classes.card}>
+      {product.name} - <strong>${product.price.toFixed(2)}</strong>
     </div>
   );
 };

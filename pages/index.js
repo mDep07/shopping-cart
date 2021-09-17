@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={mainStyles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Home</title>
       </Head>
 
       <main className={`${mainStyles.main} ${mainStyles.button}`}>
