@@ -4,6 +4,7 @@ import mainStyles from '../styles/Main.module.css';
 import Link from 'next/link';
 
 import { ListProducts } from '../components/products/listProducts';
+import { Navbar } from '../components/navbar';
 
 const list_products = [
   { name: 'Coca Cola 1LT', price: 145.7, category: 'Driks' },
@@ -20,9 +21,11 @@ function Products() {
         <title>Products</title>
       </Head>
 
-      <Link href="/">
+      <Navbar buttons={[{path: '/', text: '← Back to Home'}]} title="Products">
+
+      {/* <Link href="/">
         <a className={mainStyles.button}>← Back to Home</a>
-      </Link>
+      </Link> */}
 
       <main className={mainStyles.main}>
         <ListProducts products={list_products} />
