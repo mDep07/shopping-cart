@@ -5,10 +5,11 @@
 .title {
   text-align: center;
   font-size: 0.8rem;
-  color: aquamarine;
+  color: darkcyan;
   font-weight: 400;
 }
 
-.buttons {
-  background-color: brown;
+.buttons button {
+  border: none;
+  margin: 0 5px;
 }

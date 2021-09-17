@@ -5,8 +5,8 @@ import { Product } from './product';
 const ListProducts = ({ products }) => {
   return (
     <div className={styles.container}>
-      {products.map((p) => (
-        <Product product={p} classes={styles} />
+      {products.map((p, i) => (
+        <Product product={p} classes={styles} key={i} />
       ))}
     </div>
   );

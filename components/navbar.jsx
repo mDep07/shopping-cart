@@ -9,9 +9,9 @@ const Navbar = ({ buttons, title }) => {
       {title && <p className={styles.title}>{title}</p>}
 
       <div className={styles.buttons}>
-        {buttons.map((btn) => (
-          <Link href={btn.path}>
-            <a className={mainStyles.button}>{btn.text}</a>
+        {buttons.map((btn, i) => (
+          <Link href={btn.path} key={i}>
+            <button className={mainStyles.button}>{btn.text}</button>
           </Link>
         ))}
       </div>
