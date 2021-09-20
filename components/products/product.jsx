@@ -7,19 +7,21 @@ const Categories = ({ name, class_style }) => (
 const Product = ({ product, classes }) => {
   return (
     <div className={classes.card} >
+      <a className={classes.showDetails} onClick={() => alert('Ver detalles:', product._id)}></a>
       <div className={classes.img}>
         <img src={product.img_url || 'https://artsmidnorthcoast.com/wp-content/uploads/2014/05/no-image-available-icon-6.png'} />
       </div>
       <div className={classes.content}>
         <h3>{product.name}</h3>
-        {
-          product.categories.map((c, i) => {
-            return <Categories name={c} class_style={classes.category} key={i} />
-          })
-        }        
+        {/*
+          {
+            product.categories.map((c, i) => {
+              return <Categories name={c} class_style={classes.category} key={i} />
+            })
+          }
+        */}        
         <span className={classes.price}>${product.price.toFixed(2)}</span>
-        <a className={classes.showDetails} onClick={() => console.log('Ver detalles:', product._id)}></a>
-        <a className={classes.addItem} onClick={() => console.log('Agregar al carrito:',product._id)}>+ Agregar</a>
+        <a className={classes.addItem} onClick={() => alert('Agregar al carrito:', product._id)}>+ Agregar</a>
       </div>
     </div>
   );

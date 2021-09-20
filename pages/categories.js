@@ -2,6 +2,7 @@ import Head from 'next/head';
 import mainStyles from '../styles/Main.module.css';
 
 import { Navbar } from '../components/navbar';
+import { ListCategory } from '../components/categories/listCategories';
 
 function Categories() {
   return (
@@ -17,6 +18,7 @@ function Categories() {
 
       <main className={mainStyles.main}>
         <h1>Categories List</h1>
+        <ListCategory categories={list_categories} />
       </main>
 
       <footer className={mainStyles.footer}>
