@@ -18,7 +18,7 @@ function Categories() {
 
       <main className={mainStyles.main}>
         <h1>Categories List</h1>
-        <ListCategory categories={list_categories} />
+        {/* <ListCategory categories={list_categories} /> */}
       </main>
 
       <footer className={mainStyles.footer}>
